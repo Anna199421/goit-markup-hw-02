@@ -20,11 +20,16 @@
 } */
 
 :root {
-    --main color: #FFFFFF;
+    --main-color: #FFFFFF;
+    --main-color2: #2196F3;
+    --main-color3: #212121;
+    --main-color4: #757575;
+
 }
 
 body {
     font-family: "Roboto", sans-serif;
+    font-size: 14px;
 }
 
 .list, .logo {
@@ -33,58 +38,48 @@ body {
 .link, .logo, .mail, .tel {
     text-decoration: none;
 }
+.caret {
+    color: var(--main-color2)
+}
 
 
 
              /*header*/
              
- .header {
-    background-color: var(--main-color);
- }
-              
-.header-logo {
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-/* identical to box height */
-letter-spacing: 0.03em;
-color: #2196F3;
-}
-.logo-header {
+ .header-logo, .logo-header {
     font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 /* identical to box height */
 letter-spacing: 0.03em;
+ }
+              
+.header-logo {
+color: var(--main-color2);
+}
+.logo-header {
 color:#000000;
+}
+  
+.header-list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    
 }
 
 .header-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--main-color3);
 }
 
-.header-mail {
-    font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: #212121;
-}
 
-.header-tel {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #757575;
+.header-tel, .header-mail {
+    color: var(--main-color4);
 }    
 
 .header-link:hover, .header-mail:hover, .header-tel:hover, .header-link:focus, .header-mail:focus, .header-tel:focus {
-    color: #2196F3;
+    color: var(--main-color2);
 } 
 
                     /*Hero*/
@@ -101,7 +96,7 @@ line-height: 1,36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: #FFFFFF;
+color: var(--main-color);
 }
 
 .hero-btn {
@@ -109,18 +104,21 @@ color: #FFFFFF;
     font-size: 16px;
     line-height: 1,87;
     /* identical to box height, or 188% */
-    display: flex;
-    align-items: center;
+    font-family: inherit;
     text-decoration: none; 
     letter-spacing: 0.06em;
-    color: #FFFFFF;
-     background-color: #2196F3;
+    color: var(--main-color);
+     background-color: var(--main-color2);
     
 }
- .hero-btn:hover, .hero-btn:focus {
+ .hero-btn:hover, .hero-btns:hover,.hero-btns:focus, .hero-btn:focus {
    background-color: #188CE8;
  }
+ 
+   .hero-btns {
+background-color: #F5F4FA;
 
+   }
                       /*Hiden*/
 
  .hidden-title {
@@ -129,7 +127,7 @@ font-size: 14px;
 line-height: 1,14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: #212121;
+color: var(--main-color3);
 }
 .hidden-text {
 font-weight: 400;
@@ -137,7 +135,7 @@ font-size: 14px;
 line-height: 1,71;
 /* or 171% */
 letter-spacing: 0.03em;
-color: #757575;
+color: var(--main-color4);
 }
 
                     /*IMG*/
@@ -147,7 +145,7 @@ font-size: 36px;
 line-height: 1,16;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
+color: var(--main-color3);
 }
  
                       /* Team*/
@@ -162,7 +160,7 @@ font-size: 36px;
 line-height: 1,16;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
+color: var(--main-color3);
 }
 
 .team-subtitle {
@@ -172,7 +170,7 @@ line-height: 1,19;
 /* identical to box height */
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
+color: var(--main-color3);
 }
 .team-text {
     font-weight: 400;
@@ -181,7 +179,25 @@ line-height: 1,18;
 /* identical to box height */
 text-align: center;
 letter-spacing: 0.03em;
-color: #757575;
+color: var(--main-color4);
+}
+
+.projects-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.projects-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1,87;
+    /* identical to box height, or 188% */
+    letter-spacing: 0.03em;
+    color: #757575;
 }
 
                  /*footer*/
@@ -190,21 +206,20 @@ color: #757575;
 }
 
 
-.footer-logo {
+.footer-logo, .logo-footer {
  font-weight: 700;
 font-size: 26px;
 line-height: 1,19;
 /* identical to box height */
 letter-spacing: 0.03em;
-color: #2196F3;
  }
+
+ .footer-logo {
+    color: var(--main-color2);
+ }
+
  .logo-footer{
-    font-weight: 700;
-font-size: 26px;
-line-height: 1,19;
-/* identical to box height */
-letter-spacing: 0.03em;
-color: #FFFFFF;
+color: var(--main-color);
  }
 
  .footer-address {
@@ -217,7 +232,7 @@ font-size: 14px;
 line-height: 1,71;
 /* or 171% */
 letter-spacing: 0.03em;
-color: #FFFFFF;
+color: var(--main-color);
 }
 
 .links {
@@ -235,6 +250,10 @@ color: #FFFFFF;
     height: 1px;
     margin: -1px;
     …
+  }
+
+  .projects-item {
+
   }
 
 
