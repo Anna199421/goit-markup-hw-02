@@ -116,8 +116,30 @@ color: var(--main-color);
  }
  
    .hero-btns {
+    width: 112px;
+height: 38px;
+left: 726px;
+top: 174px;
+color: var(--main-color3);
 background-color: #F5F4FA;
+   }
 
+   .hero-btns1 {
+    width: 73px;
+height: 38px;
+left: 512px;
+top: 174px;
+color: var(--main-color);
+background: #2196F3;
+   }
+
+   .hero-btns, .hero-btns1 {
+    font-weight: 500;
+font-size: 16px;
+line-height: 1,62;
+/* identical to box height, or 162% */
+text-align: center;
+letter-spacing: 0.03em;
    }
                       /*Hiden*/
 
